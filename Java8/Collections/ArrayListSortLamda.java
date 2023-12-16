@@ -1,0 +1,20 @@
+package Java8.Collections;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class ArrayListSortLamda {
+    public static void main(String[] args) {
+        ArrayList<Integer> l = new ArrayList<>();
+        l.add(12);
+        l.add(0);
+        l.add(5);
+        l.add(8);
+        l.add(3);
+        l.add(21);
+        System.out.println("Before: "+l);
+        //Using Lamda Exppression
+        Collections.sort(l, (I1,I2) -> (I1 > I2) ? -1 : (I1 < I2) ? 1 : 0);
+        System.out.println("After: "+l);
+    }
+}
