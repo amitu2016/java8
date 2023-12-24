@@ -13,6 +13,7 @@ public class AnonymousDemoLambda3 {
         inref i = () -> {
             int x = 8888;
             System.out.println(this.x);
+            System.out.println(x);
         };
         i.m1();
     }
